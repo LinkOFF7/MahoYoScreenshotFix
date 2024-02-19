@@ -1,0 +1,12 @@
+haiku -l mahoyo.hku 38483F1729C6FFDD561458B9A4B0291B94B4865B.IPS
+
+
+// Enable recording video
+instrs d3668 4 {
+	!jump #0x12a4c0
+}
+
+// Enable taking screenshots
+instrs d367c 4 {
+	!jump #0x12a4e0
+}
